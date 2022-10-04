@@ -8,7 +8,7 @@ The goal of this easily set up a demo environment with Synapse Link for datavers
 ## Prerequisites
 - Azure tenant with a subscription with owner rights
 
-##Steps
+## Steps
 1. Spin up a Microsoft Dataverse database with sample data.  
 **Instructions:** https://learn.microsoft.com/en-us/power-platform/admin/create-database
 
