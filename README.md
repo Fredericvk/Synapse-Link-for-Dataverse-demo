@@ -4,7 +4,7 @@
 The goal of this easily set up a demo environment with Synapse Link for dataverse, combining sample data in dataverse and generated data simulating Outlook interactions with customers.
 
 ## Architecture overview:
-
+![Demo scenario](https://github.com/Fredericvk/Synapse-Link-for-Dataverse-demo/blob/main/Architecture/Demo%20Scenario.png)
 ## Prerequisites
 - Azure tenant with a subscription with owner rights
 
