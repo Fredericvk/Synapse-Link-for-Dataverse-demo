@@ -1,19 +1,28 @@
 # Synapse-Link-for-Dataverse-demo
 
-Goal
+## Goal
 The goal of this easily set up a demo environment with Synapse Link for dataverse, combining sample data in dataverse and generated data simulating Outlook interactions with customers.
 
-Architecture overview:
+## Architecture overview:
 
-Prerequisites
+## Prerequisites
 - Azure tenant with a subscription with owner rights
 
-Steps
-1. Spin up a Microsoft Dataverse database with sample data. Instructions - https://learn.microsoft.com/en-us/power-platform/admin/create-database
-2. Create a Synapse workspace in the SAME tenant and region as your Dataverse instance. Instructions - https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace
-3. Set up Synapse Link for Dataverse. Instructions - https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-synapse
-Here you can select multiple tables, but make sure to select the Account table.
-4. Import the two notebooks in your Synapse workspace. Instructions - https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#create-a-notebook
+##Steps
+1. Spin up a Microsoft Dataverse database with sample data. 
+**Instructions:** https://learn.microsoft.com/en-us/power-platform/admin/create-database
+
+2. Create a Synapse workspace in the SAME tenant and region as your Dataverse instance. 
+**Instructions:** https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace
+
+3. Set up Synapse Link for Dataverse. Here you can all the tables you land in Synapse, but make sure to select the Account table. Also make sure to enable "connect to Synapse workspace".
+**Instructions:** https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-synapse
+
+4. Import the two notebooks in your Synapse workspace. 
+**Instructions:** https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#create-a-notebook
+
 5. Make sure that in the notebooks, you change the lake database that is being used. You can find the name of yours in the details tab Synapse Link for Dataverse in the PowerApps portal https://make.powerapps.com
+
 6. Run first the Generate - Interactions notebook. Once that is completed, run the Create Table Acc Int notebook.
+
 7. Create a Power BI report based off the created Table Acc Int.
